@@ -1,4 +1,4 @@
-{% set version = '0.2.6' %}
+{% set version = "0.2.7" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shinyTree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shinyTree/shinyTree_{{ version }}.tar.gz
-  sha256: d278405c3e7ef31064367b9b165bbde900ecb472e0ed7c5d91ee572d37b786e7
+  sha256: 4387f11f47fd24f260b53224a884101156964944d68dee8583674f761513dd49
 
 build:
   noarch: generic
-  number: 1000
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,13 +25,18 @@ build:
 requirements:
   host:
     - r-base
+    - r-htmlwidgets
     - r-jsonlite
+    - r-promises
     - r-shiny >=0.9.0
-
+    - r-stringr
   run:
     - r-base
+    - r-htmlwidgets
     - r-jsonlite
+    - r-promises
     - r-shiny >=0.9.0
+    - r-stringr
 
 test:
   commands:
@@ -47,11 +52,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - dpryan79
+    - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
