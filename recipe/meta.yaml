@@ -25,13 +25,18 @@ build:
 requirements:
   host:
     - r-base
+    - r-htmlwidgets
     - r-jsonlite
+    - r-promises
     - r-shiny >=0.9.0
-
+    - r-stringr
   run:
     - r-base
+    - r-htmlwidgets
     - r-jsonlite
+    - r-promises
     - r-shiny >=0.9.0
+    - r-stringr
 
 test:
   commands:
@@ -47,11 +52,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - dpryan79
+    - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
