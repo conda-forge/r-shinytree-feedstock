@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: generic
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,10 +46,12 @@ test:
 about:
   home: https://CRAN.R-project.org/package=shinyTree
   license: MIT
-  summary: Exposes bindings to jsTree -- a JavaScript library that supports interactive trees
-    -- to enable a rich, editable trees in Shiny.
+  summary: Exposes bindings to jsTree -- a JavaScript library that supports interactive trees -- to enable a rich, editable trees in Shiny.
   license_family: MIT
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
+    - LICENSE
 extra:
   recipe-maintainers:
     - conda-forge/r
