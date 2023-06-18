@@ -1,11 +1,11 @@
-About r-shinytree
-=================
+About r-shinytree-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shinytree-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=shinyTree
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shinytree-feedstock/blob/main/LICENSE.txt)
 
 Summary: Exposes bindings to jsTree -- a JavaScript library that supports interactive trees -- to enable a rich, editable trees in Shiny.
 
