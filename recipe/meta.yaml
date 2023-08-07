@@ -1,4 +1,4 @@
-{% set version = "0.2.7" %}
+{% set version = "0.3.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shinyTree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shinyTree/shinyTree_{{ version }}.tar.gz
-  sha256: 4387f11f47fd24f260b53224a884101156964944d68dee8583674f761513dd49
+  sha256: 46babd24da24de9211e1a4ddbaf48a3b60dbd8a1695dddbedf2ca5dd9e762e4f
 
 build:
   noarch: generic
-  number: 4
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
